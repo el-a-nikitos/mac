@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:mac-cache
 EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
@@ -474,123 +475,113 @@ GND
 $Comp
 L elements:Резистор_0,125Вт R?
 U 1 1 5C333E5F
-P 5450 7350
-F 0 "R?" V 5397 7453 60  0000 L CNN
-F 1 "20к" V 5503 7453 60  0000 L CNN
-F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 5450 7350 60  0001 C CNN
-F 3 "" H 5450 7350 60  0001 C CNN
-	1    5450 7350
+P 5150 7350
+F 0 "R?" V 5097 7453 60  0000 L CNN
+F 1 "20к" V 5203 7453 60  0000 L CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 5150 7350 60  0001 C CNN
+F 3 "" H 5150 7350 60  0001 C CNN
+	1    5150 7350
 	0    1    1    0   
 $EndComp
 $Comp
 L elements:Резистор_0,125Вт R?
 U 1 1 5C334333
-P 5100 7350
-F 0 "R?" V 5047 7453 60  0000 L CNN
-F 1 "20к" V 5153 7453 60  0000 L CNN
-F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 5100 7350 60  0001 C CNN
-F 3 "" H 5100 7350 60  0001 C CNN
-	1    5100 7350
+P 4800 7350
+F 0 "R?" V 4747 7453 60  0000 L CNN
+F 1 "20к" V 4853 7453 60  0000 L CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 4800 7350 60  0001 C CNN
+F 3 "" H 4800 7350 60  0001 C CNN
+	1    4800 7350
 	0    1    1    0   
 $EndComp
 $Comp
 L elements:Резистор_0,125Вт R?
 U 1 1 5C33440E
-P 4750 7350
-F 0 "R?" V 4697 7453 60  0000 L CNN
-F 1 "20к" V 4803 7453 60  0000 L CNN
-F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 4750 7350 60  0001 C CNN
-F 3 "" H 4750 7350 60  0001 C CNN
-	1    4750 7350
+P 4450 7350
+F 0 "R?" V 4397 7453 60  0000 L CNN
+F 1 "20к" V 4503 7453 60  0000 L CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 4450 7350 60  0001 C CNN
+F 3 "" H 4450 7350 60  0001 C CNN
+	1    4450 7350
 	0    1    1    0   
 $EndComp
 $Comp
 L elements:Резистор_0,125Вт R?
 U 1 1 5C334414
-P 4400 7350
-F 0 "R?" V 4347 7453 60  0000 L CNN
-F 1 "20к" V 4453 7453 60  0000 L CNN
-F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 4400 7350 60  0001 C CNN
-F 3 "" H 4400 7350 60  0001 C CNN
-	1    4400 7350
+P 4100 7350
+F 0 "R?" V 4047 7453 60  0000 L CNN
+F 1 "20к" V 4153 7453 60  0000 L CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 4100 7350 60  0001 C CNN
+F 3 "" H 4100 7350 60  0001 C CNN
+	1    4100 7350
 	0    1    1    0   
 $EndComp
 $Comp
 L elements:Резистор_0,125Вт R?
 U 1 1 5C337872
-P 4050 7350
-F 0 "R?" V 3997 7453 60  0000 L CNN
-F 1 "20к" V 4103 7453 60  0000 L CNN
-F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 4050 7350 60  0001 C CNN
-F 3 "" H 4050 7350 60  0001 C CNN
-	1    4050 7350
+P 3750 7350
+F 0 "R?" V 3697 7453 60  0000 L CNN
+F 1 "20к" V 3803 7453 60  0000 L CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 3750 7350 60  0001 C CNN
+F 3 "" H 3750 7350 60  0001 C CNN
+	1    3750 7350
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4050 6950 4050 6750
-Text Label 4050 6750 0    50   ~ 0
+	3750 6950 3750 6750
+Text Label 3750 6750 0    50   ~ 0
 VCC_MC
 Wire Wire Line
-	4400 6950 4400 6750
-Text Label 4400 6750 0    50   ~ 0
+	4100 6950 4100 6750
+Text Label 4100 6750 0    50   ~ 0
 VCC_MC
 Wire Wire Line
-	4750 6950 4750 6750
-Text Label 4750 6750 0    50   ~ 0
+	4450 6950 4450 6750
+Text Label 4450 6750 0    50   ~ 0
 VCC_MC
 Wire Wire Line
-	5100 6950 5100 6750
-Text Label 5100 6750 0    50   ~ 0
+	4800 6950 4800 6750
+Text Label 4800 6750 0    50   ~ 0
 VCC_MC
 Wire Wire Line
-	5450 6950 5450 6750
-Text Label 5450 6750 0    50   ~ 0
+	5150 6950 5150 6750
+Text Label 5150 6750 0    50   ~ 0
 VCC_MC
-Wire Wire Line
-	6250 7850 4050 7850
-Text Label 3550 7850 0    50   ~ 0
+Text Label 3250 7850 0    50   ~ 0
 TMS_RX
-Wire Wire Line
-	6250 8000 4400 8000
-Text Label 3550 8000 0    50   ~ 0
+Text Label 3250 8000 0    50   ~ 0
 TCK_TX
-Wire Wire Line
-	6250 8150 4750 8150
-Text Label 3550 8150 0    50   ~ 0
+Text Label 3250 8150 0    50   ~ 0
 TRST
-Wire Wire Line
-	6250 8300 5100 8300
-Text Label 3550 8300 0    50   ~ 0
+Text Label 3250 8300 0    50   ~ 0
 TDI
-Wire Wire Line
-	6250 8450 5450 8450
-Text Label 3550 8450 0    50   ~ 0
+Text Label 3250 8450 0    50   ~ 0
 TDO
 Wire Wire Line
-	4050 7750 4050 7850
-Connection ~ 4050 7850
+	3750 7750 3750 7850
+Connection ~ 3750 7850
 Wire Wire Line
-	4050 7850 3550 7850
+	3750 7850 3250 7850
 Wire Wire Line
-	4400 7750 4400 8000
-Connection ~ 4400 8000
+	4100 7750 4100 8000
+Connection ~ 4100 8000
 Wire Wire Line
-	4400 8000 3550 8000
+	4100 8000 3250 8000
 Wire Wire Line
-	4750 7750 4750 8150
-Connection ~ 4750 8150
+	4450 7750 4450 8150
+Connection ~ 4450 8150
 Wire Wire Line
-	4750 8150 3550 8150
+	4450 8150 3250 8150
 Wire Wire Line
-	5100 7750 5100 8300
-Connection ~ 5100 8300
+	4800 7750 4800 8300
+Connection ~ 4800 8300
 Wire Wire Line
-	5100 8300 3550 8300
+	4800 8300 3250 8300
 Wire Wire Line
-	5450 7750 5450 8450
-Connection ~ 5450 8450
+	5150 7750 5150 8450
+Connection ~ 5150 8450
 Wire Wire Line
-	5450 8450 3550 8450
+	5150 8450 3250 8450
 $Comp
 L elements:Вилка_PLS8 XP?
 U 1 1 5C35CF6B
@@ -658,7 +649,7 @@ U 1 1 5C3A56D4
 P 3000 2400
 F 0 "FU?" H 3025 2525 60  0000 C CNN
 F 1 "Предохранитель" H 3000 2275 60  0000 C CNN
-F 2 "" H 3000 2400 60  0001 C CNN
+F 2 "N_RLC:Предохранитель_SMD_1812" H 3000 2400 60  0001 C CNN
 F 3 "" H 3000 2400 60  0001 C CNN
 	1    3000 2400
 	1    0    0    -1  
@@ -798,4 +789,137 @@ Text Label 5450 8900 0    50   ~ 0
 PD6_ADC6
 Wire Wire Line
 	6250 8900 5450 8900
+Text Label 1500 1150 0    50   ~ 0
++4...30
+Wire Wire Line
+	1350 1250 1500 1250
+Wire Wire Line
+	1350 1350 1500 1350
+Wire Wire Line
+	1350 1450 1500 1450
+Text Label 1500 1450 0    50   ~ 0
+GND
+Wire Wire Line
+	1350 1150 1500 1150
+$Comp
+L elements:Вилка_PLS4 XP?
+U 1 1 5C311165
+P 850 1050
+F 0 "XP?" H 1106 1131 60  0000 C CNN
+F 1 "Вилка_PLS4" H 1050 475 60  0001 C CNN
+F 2 "" H 850 1050 60  0001 C CNN
+F 3 "" H 850 1050 60  0001 C CNN
+	1    850  1050
+	1    0    0    -1  
+$EndComp
+Text Label 1500 1250 0    50   ~ 0
+USB_D-
+Text Label 1500 1350 0    50   ~ 0
+USB_D+
+Text Label 10275 9300 0    50   ~ 0
+USB_D-
+Text Label 10275 9150 0    50   ~ 0
+USB_D+
+Wire Wire Line
+	10275 9150 10150 9150
+Wire Wire Line
+	10275 9300 10150 9300
+Wire Wire Line
+	10950 7950 10150 7950
+Text Label 10950 8100 0    50   ~ 0
+PF1_U2-TX
+Text Label 10950 7950 0    50   ~ 0
+PF0_U2-RX
+Wire Wire Line
+	10950 8100 10150 8100
+Text Label 10950 8250 0    50   ~ 0
+PF2_U2-En
+Wire Wire Line
+	10950 8250 10150 8250
+Text Label 5450 9800 0    50   ~ 0
+PE6_C2-RX
+Wire Wire Line
+	6250 9800 5450 9800
+Text Label 5450 9950 0    50   ~ 0
+PE6_C2-TX
+Wire Wire Line
+	6250 9950 5450 9950
+Wire Wire Line
+	3750 7850 6250 7850
+Wire Wire Line
+	4100 8000 6250 8000
+Wire Wire Line
+	4450 8150 6250 8150
+Wire Wire Line
+	4800 8300 6250 8300
+Wire Wire Line
+	5150 8450 6250 8450
+Text Label 5450 7250 0    50   ~ 0
+PC0_SCL1
+Wire Wire Line
+	6250 7250 5450 7250
+Text Label 5450 7400 0    50   ~ 0
+PC1_SDA1
+Wire Wire Line
+	6250 7400 5450 7400
+Text Label 5450 9200 0    50   ~ 0
+PE0_T2C1_DAC
+Wire Wire Line
+	6250 9200 5450 9200
+Text Label 5450 9350 0    50   ~ 0
+PE1_T2nC1
+Wire Wire Line
+	6250 9350 5450 9350
+Text Label 5450 9500 0    50   ~ 0
+PE2_T2C3
+Wire Wire Line
+	6250 9500 5450 9500
+Text Label 5450 9650 0    50   ~ 0
+PE3_T2nC3
+Wire Wire Line
+	6250 9650 5450 9650
+Text Label 5450 5450 0    50   ~ 0
+PB0
+Wire Wire Line
+	6250 5450 5450 5450
+Text Label 5450 5600 0    50   ~ 0
+PB1
+Wire Wire Line
+	6250 5600 5450 5600
+Text Label 5450 5750 0    50   ~ 0
+PB2
+Wire Wire Line
+	6250 5750 5450 5750
+Text Label 5450 7550 0    50   ~ 0
+PC2
+Wire Wire Line
+	6250 7550 5450 7550
+Text Label 5450 5900 0    50   ~ 0
+PB3
+Wire Wire Line
+	6250 5900 5450 5900
+Text Label 5450 6050 0    50   ~ 0
+PB4
+Wire Wire Line
+	6250 6050 5450 6050
+Text Label 5450 6200 0    50   ~ 0
+PB5
+Wire Wire Line
+	6250 6200 5450 6200
+Text Label 5450 6350 0    50   ~ 0
+PB6
+Wire Wire Line
+	6250 6350 5450 6350
+Text Label 5450 6500 0    50   ~ 0
+PB7
+Wire Wire Line
+	6250 6500 5450 6500
+Text Label 5450 6650 0    50   ~ 0
+PB8
+Wire Wire Line
+	6250 6650 5450 6650
+Text Label 5450 6800 0    50   ~ 0
+PB9
+Wire Wire Line
+	6250 6800 5450 6800
 $EndSCHEMATC
