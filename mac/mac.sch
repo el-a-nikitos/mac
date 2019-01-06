@@ -484,28 +484,6 @@ F 3 "" H 7050 10100 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L elements:Резистор_0,125Вт R5
-U 1 1 5C334333
-P 6700 10100
-F 0 "R5" V 6647 10203 60  0000 L CNN
-F 1 "20к" V 6753 10203 60  0000 L CNN
-F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 6700 10100 60  0001 C CNN
-F 3 "" H 6700 10100 60  0001 C CNN
-	1    6700 10100
-	0    1    1    0   
-$EndComp
-$Comp
-L elements:Резистор_0,125Вт R4
-U 1 1 5C33440E
-P 6350 10100
-F 0 "R4" V 6297 10203 60  0000 L CNN
-F 1 "20к" V 6403 10203 60  0000 L CNN
-F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 6350 10100 60  0001 C CNN
-F 3 "" H 6350 10100 60  0001 C CNN
-	1    6350 10100
-	0    1    1    0   
-$EndComp
-$Comp
 L elements:Резистор_0,125Вт R3
 U 1 1 5C334414
 P 6000 10100
@@ -536,27 +514,15 @@ Wire Wire Line
 Text Label 6000 9500 0    50   ~ 0
 VCC_MC
 Wire Wire Line
-	6350 9700 6350 9500
-Text Label 6350 9500 0    50   ~ 0
-VCC_MC
-Wire Wire Line
-	6700 9700 6700 9500
-Text Label 6700 9500 0    50   ~ 0
-VCC_MC
-Wire Wire Line
 	7050 9700 7050 9500
 Text Label 7050 9500 0    50   ~ 0
 VCC_MC
 Text Label 5150 10600 0    50   ~ 0
-TMS_RX
+TMS_DIO_RX
 Text Label 5150 10750 0    50   ~ 0
-TCK_TX
-Text Label 5150 10900 0    50   ~ 0
-TRST
-Text Label 5150 11050 0    50   ~ 0
-TDI
+TCK_CLK_TX
 Text Label 5150 11200 0    50   ~ 0
-TDO
+TDO_SWO
 Wire Wire Line
 	5650 10500 5650 10600
 Connection ~ 5650 10600
@@ -568,31 +534,10 @@ Connection ~ 6000 10750
 Wire Wire Line
 	6000 10750 5150 10750
 Wire Wire Line
-	6350 10500 6350 10900
-Connection ~ 6350 10900
-Wire Wire Line
-	6350 10900 5150 10900
-Wire Wire Line
-	6700 10500 6700 11050
-Connection ~ 6700 11050
-Wire Wire Line
-	6700 11050 5150 11050
-Wire Wire Line
 	7050 10500 7050 11200
 Connection ~ 7050 11200
 Wire Wire Line
 	7050 11200 5150 11200
-$Comp
-L elements:Вилка_PLS8 XP2
-U 1 1 5C35CF6B
-P 1850 7325
-F 0 "XP2" H 2106 7406 60  0000 C CNN
-F 1 "Вилка_PLS8" H 2100 6375 60  0001 C CNN
-F 2 "N_X:Вилка_PLS8_вертикальная" H 1850 7325 60  0001 C CNN
-F 3 "" H 1850 7325 60  0001 C CNN
-	1    1850 7325
-	1    0    0    -1  
-$EndComp
 Text Label 2500 7525 0    50   ~ 0
 +3,3_prog
 Wire Wire Line
@@ -610,23 +555,9 @@ Wire Wire Line
 Wire Wire Line
 	2350 7925 2500 7925
 Wire Wire Line
-	2350 8025 2500 8025
-Wire Wire Line
-	2350 8125 2500 8125
-Text Label 2500 7925 0    50   ~ 0
-TRST
-Text Label 2500 8025 0    50   ~ 0
-TDI
-Text Label 2500 8125 0    50   ~ 0
-TDO
-Wire Wire Line
 	2950 2350 3275 2350
 Text Label 2500 7425 0    50   ~ 0
 +4...30
-Text Label 2500 7825 0    50   ~ 0
-TMS_RX
-Text Label 2500 7725 0    50   ~ 0
-TCK_TX
 Wire Wire Line
 	2350 6375 2500 6375
 Wire Wire Line
@@ -709,23 +640,10 @@ F 3 "" H 13350 12100 60  0001 C CNN
 	1    13350 12100
 	0    1    1    0   
 $EndComp
-$Comp
-L elements:Резистор_0,125Вт R13
-U 1 1 5C3BF39A
-P 13700 12100
-F 0 "R13" V 13647 12203 60  0000 L CNN
-F 1 "20к" V 13753 12203 60  0000 L CNN
-F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 13700 12100 60  0001 C CNN
-F 3 "" H 13700 12100 60  0001 C CNN
-	1    13700 12100
-	0    1    1    0   
-$EndComp
 Text Label 13550 8100 0    50   ~ 0
 GND_MC
 Text Label 13800 12650 0    50   ~ 0
 GND_MC
-Wire Wire Line
-	13800 12650 13700 12650
 Wire Wire Line
 	13000 12650 13000 12500
 Wire Wire Line
@@ -734,11 +652,6 @@ Connection ~ 13350 12650
 Wire Wire Line
 	13350 12650 13000 12650
 Wire Wire Line
-	13700 12500 13700 12650
-Connection ~ 13700 12650
-Wire Wire Line
-	13700 12650 13350 12650
-Wire Wire Line
 	12050 11600 13000 11600
 Wire Wire Line
 	13000 11600 13000 11700
@@ -746,10 +659,6 @@ Wire Wire Line
 	12050 11450 13350 11450
 Wire Wire Line
 	13350 11450 13350 11700
-Wire Wire Line
-	12050 11300 13700 11300
-Wire Wire Line
-	13700 11300 13700 11700
 Text Label 12650 11600 0    50   ~ 0
 MODE
 Text Label 12650 11300 0    50   ~ 0
@@ -826,10 +735,6 @@ Wire Wire Line
 	5650 10600 8150 10600
 Wire Wire Line
 	6000 10750 8150 10750
-Wire Wire Line
-	6350 10900 8150 10900
-Wire Wire Line
-	6700 11050 8150 11050
 Wire Wire Line
 	7050 11200 8150 11200
 Text Label 7350 10000 0    50   ~ 0
@@ -1931,4 +1836,33 @@ Text Label 17075 7825 0    50   ~ 0
 PA5
 Text Label 17075 8275 0    50   ~ 0
 PA4
+Text Label 2500 7825 0    50   ~ 0
+TMS_DIO_RX
+Text Label 2500 7725 0    50   ~ 0
+TCK_CLK_TX
+Text Label 2500 7925 0    50   ~ 0
+TDO_SWO
+$Comp
+L elements:Вилка_PLS8 XP2
+U 1 1 5C43CAFC
+P 1850 7325
+F 0 "XP2" H 2106 7406 60  0000 C CNN
+F 1 "Вилка_PLS8" H 2100 6375 60  0001 C CNN
+F 2 "N_X:Вилка_PLS8_вертикальная" H 1850 7325 60  0001 C CNN
+F 3 "" H 1850 7325 60  0001 C CNN
+	1    1850 7325
+	1    0    0    -1  
+$EndComp
+Text Label 2500 8025 0    50   ~ 0
+RES
+Wire Wire Line
+	2500 8025 2350 8025
+NoConn ~ 2350 8125
+Wire Wire Line
+	13350 12650 13800 12650
+Wire Wire Line
+	12050 11300 13000 11300
+Wire Wire Line
+	13000 11300 13000 11600
+Connection ~ 13000 11600
 $EndSCHEMATC
