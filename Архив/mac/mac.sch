@@ -1,0 +1,1871 @@
+EESchema Schematic File Version 4
+LIBS:mac-cache
+EELAYER 26 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L elements:1986ВЕ92QL DD1
+U 1 1 5C2FF570
+P 8350 6750
+F 0 "DD1" H 11400 6825 60  0000 C CNN
+F 1 "1986ВЕ92QL" H 10100 775 60  0000 C CNN
+F 2 "N_DD:Микросхема_1986ВЕ92QL" H 7350 5500 60  0001 C CNN
+F 3 "" H 7350 5500 60  0001 C CNN
+	1    8350 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L elements:Резонатор_кварцевый ZQ1
+U 1 1 5C2FF68C
+P 12850 7750
+F 0 "ZQ1" V 12797 7878 60  0000 L CNN
+F 1 "16М" V 12903 7878 60  0000 L CNN
+F 2 "N_RLC:Резонатор_РК456МДУ(DIP)" H 12850 7750 60  0001 C CNN
+F 3 "" H 12850 7750 60  0001 C CNN
+	1    12850 7750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12550 7650 12050 7650
+Wire Wire Line
+	12050 7400 12850 7400
+Wire Wire Line
+	12850 7400 12850 7450
+$Comp
+L elements:Конденсатор_керамический C1
+U 1 1 5C2FF876
+P 13250 7400
+F 0 "C1" H 13275 7500 60  0000 C CNN
+F 1 "12пФ(0603)" H 13300 7300 60  0000 C CNN
+F 2 "N_RLC:Конденсатор_SMD_0603" H 13250 7400 60  0001 C CNN
+F 3 "" H 13250 7400 60  0001 C CNN
+	1    13250 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L elements:Конденсатор_керамический C2
+U 1 1 5C2FF954
+P 13250 8100
+F 0 "C2" H 13275 8200 60  0000 C CNN
+F 1 "12пФ(0603)" H 13300 8000 60  0000 C CNN
+F 2 "N_RLC:Конденсатор_SMD_0603" H 13250 8100 60  0001 C CNN
+F 3 "" H 13250 8100 60  0001 C CNN
+	1    13250 8100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13200 7400 12850 7400
+Connection ~ 12850 7400
+Wire Wire Line
+	12550 8100 12850 8100
+Wire Wire Line
+	12850 8100 12850 8050
+Wire Wire Line
+	12550 7650 12550 8100
+Wire Wire Line
+	13200 8100 12850 8100
+Connection ~ 12850 8100
+Wire Wire Line
+	13350 7400 13550 7400
+Wire Wire Line
+	13550 8100 13350 8100
+Text Label 13550 7400 0    50   ~ 0
+GND_MC
+$Comp
+L elements:Резистор_0,125Вт R7
+U 1 1 5C301114
+P 12350 6400
+F 0 "R7" V 12297 6503 60  0000 L CNN
+F 1 "20к" V 12403 6503 60  0000 L CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 12350 6400 60  0001 C CNN
+F 3 "" H 12350 6400 60  0001 C CNN
+	1    12350 6400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12050 6850 12350 6850
+Wire Wire Line
+	12350 6850 12350 6800
+Text Label 12150 6850 0    50   ~ 0
+RES
+Wire Wire Line
+	12350 6000 12350 5800
+Text Label 12350 5800 0    50   ~ 0
+VCC_MC
+$Comp
+L elements:Диод_шоттки VD1
+U 1 1 5C30170C
+P 3525 3050
+F 0 "VD1" H 3675 3175 50  0000 C CNN
+F 1 "BAR43CFILM" H 3775 2925 50  0000 C CNN
+F 2 "N_VD_HL:Диод_BAR43CFILM_SOT-23" H 3425 3050 50  0001 C CNN
+F 3 "" H 3425 3050 50  0001 C CNN
+	1    3525 3050
+	1    0    0    -1  
+$EndComp
+Text Label 3125 3050 0    50   ~ 0
++3,3_prog
+Wire Wire Line
+	3125 3050 3525 3050
+$Comp
+L elements:Диод_шоттки VD2
+U 1 1 5C301969
+P 3525 3400
+F 0 "VD2" H 3675 3525 50  0000 C CNN
+F 1 "BAR43CFILM" H 3775 3275 50  0000 C CNN
+F 2 "N_VD_HL:Диод_BAR43CFILM_SOT-23" H 3425 3400 50  0001 C CNN
+F 3 "" H 3425 3400 50  0001 C CNN
+	1    3525 3400
+	1    0    0    -1  
+$EndComp
+Text Label 4425 3400 0    50   ~ 0
+VCC
+Wire Wire Line
+	3125 3400 3525 3400
+Text Label 3125 3750 0    50   ~ 0
+GND
+Wire Wire Line
+	3825 3050 4125 3050
+Wire Wire Line
+	4125 3050 4125 3400
+Wire Wire Line
+	4125 3400 3825 3400
+$Comp
+L elements:Конденсатор_керамический C3
+U 1 1 5C301DDD
+P 4125 3550
+F 0 "C3" V 4100 3700 60  0000 C CNN
+F 1 "4,7мкФ(1210)" V 4250 3900 60  0000 C CNN
+F 2 "N_RLC:Конденсатор_SMD_1210" H 4125 3550 60  0001 C CNN
+F 3 "" H 4125 3550 60  0001 C CNN
+	1    4125 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4125 3400 4125 3500
+Connection ~ 4125 3400
+Wire Wire Line
+	4125 3750 4125 3650
+$Comp
+L elements:Чип-индуктивность L1
+U 1 1 5C30255A
+P 5800 3400
+F 0 "L1" H 5650 3525 60  0000 C CNN
+F 1 "33мкГн(0805)" H 5675 3350 60  0000 C CNN
+F 2 "N_RLC:Чип-индуктивность_SMD_0805" H 5800 3400 60  0001 C CNN
+F 3 "" H 5800 3400 60  0001 C CNN
+	1    5800 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L elements:Чип-индуктивность L2
+U 1 1 5C302753
+P 5800 3750
+F 0 "L2" H 5650 3875 60  0000 C CNN
+F 1 "33мкГн(0805)" H 5675 3700 60  0000 C CNN
+F 2 "N_RLC:Чип-индуктивность_SMD_0805" H 5800 3750 60  0001 C CNN
+F 3 "" H 5800 3750 60  0001 C CNN
+	1    5800 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L elements:Конденсатор_керамический C4
+U 1 1 5C303987
+P 6050 3550
+F 0 "C4" V 6025 3700 60  0000 C CNN
+F 1 "4,7мкФ(1210)" V 6175 3900 60  0000 C CNN
+F 2 "N_RLC:Конденсатор_SMD_1210" H 6050 3550 60  0001 C CNN
+F 3 "" H 6050 3550 60  0001 C CNN
+	1    6050 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5850 3400 6050 3400
+Wire Wire Line
+	6050 3400 6050 3500
+Wire Wire Line
+	5850 3750 6050 3750
+Wire Wire Line
+	6050 3750 6050 3650
+$Comp
+L elements:Конденсатор_керамический C5
+U 1 1 5C3040E9
+P 6750 3550
+F 0 "C5" V 6725 3700 60  0000 C CNN
+F 1 "4,7мкФ(1210)" V 6875 3900 60  0000 C CNN
+F 2 "N_RLC:Конденсатор_SMD_1210" H 6750 3550 60  0001 C CNN
+F 3 "" H 6750 3550 60  0001 C CNN
+	1    6750 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6750 3400 6750 3500
+Wire Wire Line
+	6750 3750 6750 3650
+Wire Wire Line
+	6050 3750 6750 3750
+Connection ~ 6050 3750
+Wire Wire Line
+	6750 3400 6050 3400
+Connection ~ 6050 3400
+$Comp
+L elements:Конденсатор_керамический C6
+U 1 1 5C304D83
+P 7450 3550
+F 0 "C6" V 7425 3700 60  0000 C CNN
+F 1 "4,7мкФ(1210)" V 7575 3900 60  0000 C CNN
+F 2 "N_RLC:Конденсатор_SMD_1210" H 7450 3550 60  0001 C CNN
+F 3 "" H 7450 3550 60  0001 C CNN
+	1    7450 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7450 3400 7450 3500
+Wire Wire Line
+	7450 3750 7450 3650
+$Comp
+L elements:Конденсатор_керамический C7
+U 1 1 5C305318
+P 8150 3550
+F 0 "C7" V 8125 3700 60  0000 C CNN
+F 1 "4,7мкФ(1210)" V 8275 3900 60  0000 C CNN
+F 2 "N_RLC:Конденсатор_SMD_1210" H 8150 3550 60  0001 C CNN
+F 3 "" H 8150 3550 60  0001 C CNN
+	1    8150 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8150 3400 8150 3500
+Wire Wire Line
+	8150 3750 8150 3650
+$Comp
+L elements:Конденсатор_керамический C9
+U 1 1 5C3060C6
+P 9950 3550
+F 0 "C9" V 9925 3700 60  0000 C CNN
+F 1 "4,7мкФ(1210)" V 10075 3900 60  0000 C CNN
+F 2 "N_RLC:Конденсатор_SMD_1210" H 9950 3550 60  0001 C CNN
+F 3 "" H 9950 3550 60  0001 C CNN
+	1    9950 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9950 3400 9950 3500
+Wire Wire Line
+	9950 3750 9950 3650
+Wire Wire Line
+	6750 3400 7450 3400
+Connection ~ 6750 3400
+Connection ~ 7450 3400
+Wire Wire Line
+	7450 3400 8150 3400
+Wire Wire Line
+	9250 3400 9950 3400
+Wire Wire Line
+	9950 3750 9250 3750
+Connection ~ 6750 3750
+Connection ~ 7450 3750
+Wire Wire Line
+	7450 3750 6750 3750
+Connection ~ 8150 3750
+Wire Wire Line
+	8150 3750 7450 3750
+Text Label 8150 3400 0    50   ~ 0
+VCC_MC
+Text Label 8150 3900 0    50   ~ 0
+GND_MC
+Wire Wire Line
+	8150 3750 8150 3900
+$Comp
+L elements:Резистор_0,125Вт R10
+U 1 1 5C3080B5
+P 12725 6400
+F 0 "R10" V 12672 6503 60  0000 L CNN
+F 1 "20к" V 12778 6503 60  0000 L CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 12725 6400 60  0001 C CNN
+F 3 "" H 12725 6400 60  0001 C CNN
+	1    12725 6400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12725 6000 12725 5800
+Text Label 12725 5800 0    50   ~ 0
+VCC_MC
+Wire Wire Line
+	12050 7000 12725 7000
+Wire Wire Line
+	12725 6800 12725 7000
+NoConn ~ 12050 7150
+Text Label 12175 7950 0    50   ~ 0
+VCC_MC
+Wire Wire Line
+	12175 7950 12050 7950
+Text Label 12175 8100 0    50   ~ 0
+VCC_MC
+Wire Wire Line
+	12175 8100 12050 8100
+Text Label 12175 8250 0    50   ~ 0
+VCC_MC
+Wire Wire Line
+	12175 8250 12050 8250
+Text Label 12175 8400 0    50   ~ 0
+VCC_MC
+Wire Wire Line
+	12175 8400 12050 8400
+Wire Wire Line
+	12175 8650 12050 8650
+Wire Wire Line
+	12175 8800 12050 8800
+Text Label 12175 9050 0    50   ~ 0
+VCC_MC
+Wire Wire Line
+	12175 9050 12050 9050
+Wire Wire Line
+	12175 9300 12050 9300
+Text Label 12175 9300 0    50   ~ 0
+GND_MC
+Wire Wire Line
+	12175 9450 12050 9450
+Text Label 12175 9450 0    50   ~ 0
+GND_MC
+Wire Wire Line
+	12175 9600 12050 9600
+Text Label 12175 9600 0    50   ~ 0
+GND_MC
+Wire Wire Line
+	12175 9750 12050 9750
+Text Label 12175 9750 0    50   ~ 0
+GND_MC
+NoConn ~ 12050 10000
+Wire Wire Line
+	12175 10250 12050 10250
+Wire Wire Line
+	12175 10400 12050 10400
+$Comp
+L elements:Чип-индуктивность L3
+U 1 1 5C314B8E
+P 9200 3400
+F 0 "L3" H 9050 3525 60  0000 C CNN
+F 1 "33мкГн(0805)" H 9075 3350 60  0000 C CNN
+F 2 "N_RLC:Чип-индуктивность_SMD_0805" H 9200 3400 60  0001 C CNN
+F 3 "" H 9200 3400 60  0001 C CNN
+	1    9200 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L elements:Чип-индуктивность L4
+U 1 1 5C314B94
+P 9200 3750
+F 0 "L4" H 9050 3875 60  0000 C CNN
+F 1 "33мкГн(0805)" H 9075 3700 60  0000 C CNN
+F 2 "N_RLC:Чип-индуктивность_SMD_0805" H 9200 3750 60  0001 C CNN
+F 3 "" H 9200 3750 60  0001 C CNN
+	1    9200 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 3750 8150 3750
+Wire Wire Line
+	8150 3400 8750 3400
+Connection ~ 8150 3400
+Text Label 9500 3400 0    50   ~ 0
+A_VCC_MC
+Text Label 9500 3750 0    50   ~ 0
+A_GND_MC
+Text Label 12175 8650 0    50   ~ 0
+A_VCC_MC
+Text Label 12175 10250 0    50   ~ 0
+A_GND_MC
+Text Label 12175 8800 0    50   ~ 0
+A_VCC_MC
+Text Label 12175 10400 0    50   ~ 0
+A_GND_MC
+Text Label 3125 3400 0    50   ~ 0
++3,3
+$Comp
+L elements:стабилизатор_нерегулируемый_LM2950 G1
+U 1 1 5C31E7C0
+P 3325 2350
+F 0 "G1" H 3675 2615 50  0000 C CNN
+F 1 "стабилизатор_нерегулируемый_LM2950" H 3675 2524 50  0000 C CNN
+F 2 "N_G:Стабилизатор_корпус_TO-92" H 3325 2350 50  0001 C CNN
+F 3 "" H 3325 2350 50  0001 C CNN
+	1    3325 2350
+	1    0    0    -1  
+$EndComp
+Text Label 3125 2750 0    50   ~ 0
+GND
+Wire Wire Line
+	3125 2750 3675 2750
+Wire Wire Line
+	3675 2750 3675 2650
+Wire Wire Line
+	4075 2350 4125 2350
+Wire Wire Line
+	4125 2350 4125 3050
+Connection ~ 4125 3050
+Text Label 2500 6275 0    50   ~ 0
++4...30
+$Comp
+L elements:Диод_шоттки VD4
+U 1 1 5C32A252
+P 4825 3700
+F 0 "VD4" V 5050 3550 50  0000 C CNN
+F 1 "BAR43CFILM" V 4900 3450 50  0000 C CNN
+F 2 "N_VD_HL:Диод_BAR43CFILM_SOT-23" H 4725 3700 50  0001 C CNN
+F 3 "" H 4725 3700 50  0001 C CNN
+	1    4825 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4125 3400 4825 3400
+Connection ~ 4825 3400
+Wire Wire Line
+	4825 3400 5350 3400
+Wire Wire Line
+	4125 3750 4825 3750
+Wire Wire Line
+	4825 3700 4825 3750
+Connection ~ 4825 3750
+Wire Wire Line
+	4825 3750 5350 3750
+Text Label 3875 4150 0    50   ~ 0
+VCC
+$Comp
+L elements:Резистор_0,125Вт R1
+U 1 1 5C32EB21
+P 4475 4150
+F 0 "R1" H 4475 4025 60  0000 C CNN
+F 1 "39" H 4475 4300 60  0000 C CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 4475 4150 60  0001 C CNN
+F 3 "" H 4475 4150 60  0001 C CNN
+	1    4475 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3875 4150 4075 4150
+$Comp
+L elements:Светодиод HL1
+U 1 1 5C3306C5
+P 5025 4150
+F 0 "HL1" H 5175 4325 60  0000 C CNN
+F 1 "Светодиод" H 5175 4000 60  0000 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_0603" H 5325 3650 60  0001 C CNN
+F 3 "" H 5325 3650 60  0001 C CNN
+	1    5025 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4875 4150 5025 4150
+Wire Wire Line
+	5325 4150 5525 4150
+Text Label 5525 4150 0    50   ~ 0
+GND
+$Comp
+L elements:Резистор_0,125Вт R6
+U 1 1 5C333E5F
+P 6875 10100
+F 0 "R6" V 6822 10203 60  0000 L CNN
+F 1 "20к" V 6928 10203 60  0000 L CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 6875 10100 60  0001 C CNN
+F 3 "" H 6875 10100 60  0001 C CNN
+	1    6875 10100
+	0    1    1    0   
+$EndComp
+$Comp
+L elements:Резистор_0,125Вт R3
+U 1 1 5C334414
+P 6500 10100
+F 0 "R3" V 6447 10203 60  0000 L CNN
+F 1 "20к" V 6553 10203 60  0000 L CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 6500 10100 60  0001 C CNN
+F 3 "" H 6500 10100 60  0001 C CNN
+	1    6500 10100
+	0    1    1    0   
+$EndComp
+$Comp
+L elements:Резистор_0,125Вт R2
+U 1 1 5C337872
+P 6150 10100
+F 0 "R2" V 6097 10203 60  0000 L CNN
+F 1 "20к" V 6203 10203 60  0000 L CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 6150 10100 60  0001 C CNN
+F 3 "" H 6150 10100 60  0001 C CNN
+	1    6150 10100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6150 9700 6150 9500
+Text Label 6150 9500 0    50   ~ 0
+VCC_MC
+Wire Wire Line
+	6500 9700 6500 9500
+Text Label 6500 9500 0    50   ~ 0
+VCC_MC
+Wire Wire Line
+	6875 9700 6875 9500
+Text Label 6875 9500 0    50   ~ 0
+VCC_MC
+Text Label 5150 10600 0    50   ~ 0
+TMS_DIO_RX
+Text Label 5150 10750 0    50   ~ 0
+TCK_CLK_TX
+Text Label 5150 11200 0    50   ~ 0
+TDO_SWO
+Wire Wire Line
+	6150 10500 6150 10600
+Wire Wire Line
+	6500 10500 6500 10750
+Wire Wire Line
+	6875 10500 6875 11200
+Text Label 2500 7525 0    50   ~ 0
++3,3_prog
+Wire Wire Line
+	2350 7425 2500 7425
+Text Label 2500 7625 0    50   ~ 0
+GND
+Wire Wire Line
+	2350 7525 2500 7525
+Wire Wire Line
+	2350 7625 2500 7625
+Wire Wire Line
+	2350 7725 2500 7725
+Wire Wire Line
+	2350 7825 2500 7825
+Wire Wire Line
+	2350 7925 2500 7925
+Wire Wire Line
+	2950 2350 3275 2350
+Text Label 2500 7425 0    50   ~ 0
++4...30
+Wire Wire Line
+	2350 6375 2500 6375
+Wire Wire Line
+	2350 6475 2500 6475
+Wire Wire Line
+	2350 6575 2500 6575
+Text Label 2500 6375 0    50   ~ 0
+GND
+Text Label 2500 6475 0    50   ~ 0
+GND
+Text Label 2500 6575 0    50   ~ 0
++3,3
+Wire Wire Line
+	2350 6275 2500 6275
+Text Label 2950 2350 0    50   ~ 0
++4...30
+$Comp
+L elements:Предохранитель FU1
+U 1 1 5C3A56D4
+P 3650 3750
+F 0 "FU1" H 3675 3875 60  0000 C CNN
+F 1 "Предохранитель" H 3650 3625 60  0000 C CNN
+F 2 "N_RLC:Предохранитель_SMD_1812" H 3650 3750 60  0001 C CNN
+F 3 "" H 3650 3750 60  0001 C CNN
+	1    3650 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3750 4125 3750
+Connection ~ 4125 3750
+Wire Wire Line
+	3125 3750 3250 3750
+$Comp
+L elements:Диод_шоттки VD3
+U 1 1 5C3ADEB5
+P 4825 3150
+F 0 "VD3" V 5050 3000 50  0000 C CNN
+F 1 "BAR43CFILM" V 4900 2900 50  0000 C CNN
+F 2 "N_VD_HL:Диод_BAR43CFILM_SOT-23" H 4725 3150 50  0001 C CNN
+F 3 "" H 4725 3150 50  0001 C CNN
+	1    4825 3150
+	0    -1   -1   0   
+$EndComp
+Text Label 4825 2700 0    50   ~ 0
++4...30
+Wire Wire Line
+	4825 2700 4825 2850
+Wire Wire Line
+	4825 3150 4825 3400
+$Comp
+L elements:Вилка_PLS3 XP3
+U 1 1 5C3BED2E
+P 1850 8875
+F 0 "XP3" H 2106 8956 60  0000 C CNN
+F 1 "Вилка_PLS3" H 2050 8300 60  0001 C CNN
+F 2 "N_X:Вилка_PLS3_вертикальная" H 1850 8875 60  0001 C CNN
+F 3 "" H 1850 8875 60  0001 C CNN
+	1    1850 8875
+	1    0    0    -1  
+$EndComp
+$Comp
+L elements:Резистор_0,125Вт R11
+U 1 1 5C3BF23D
+P 13000 12100
+F 0 "R11" V 12947 12203 60  0000 L CNN
+F 1 "20к" V 13053 12203 60  0000 L CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 13000 12100 60  0001 C CNN
+F 3 "" H 13000 12100 60  0001 C CNN
+	1    13000 12100
+	0    1    1    0   
+$EndComp
+$Comp
+L elements:Резистор_0,125Вт R12
+U 1 1 5C3BF33C
+P 13350 12100
+F 0 "R12" V 13297 12203 60  0000 L CNN
+F 1 "20к" V 13403 12203 60  0000 L CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 13350 12100 60  0001 C CNN
+F 3 "" H 13350 12100 60  0001 C CNN
+	1    13350 12100
+	0    1    1    0   
+$EndComp
+Text Label 13550 8100 0    50   ~ 0
+GND_MC
+Text Label 13800 12650 0    50   ~ 0
+GND_MC
+Wire Wire Line
+	13000 12650 13000 12500
+Wire Wire Line
+	13350 12500 13350 12650
+Connection ~ 13350 12650
+Wire Wire Line
+	13350 12650 13000 12650
+Wire Wire Line
+	12050 11600 13000 11600
+Wire Wire Line
+	13000 11600 13000 11700
+Wire Wire Line
+	12050 11450 13350 11450
+Wire Wire Line
+	13350 11450 13350 11700
+Text Label 12650 11600 0    50   ~ 0
+MODE
+Text Label 12650 11300 0    50   ~ 0
+MODE
+Text Label 2500 9075 0    50   ~ 0
+MODE
+Wire Wire Line
+	2350 8975 2500 8975
+Wire Wire Line
+	2350 9075 2500 9075
+Wire Wire Line
+	2350 9175 2500 9175
+Text Label 2500 9175 0    50   ~ 0
+VCC_MC
+Text Label 2500 8975 0    50   ~ 0
+GND_MC
+Text Label 7350 11350 0    50   ~ 0
+PD5_ADC5
+Wire Wire Line
+	8150 11350 7350 11350
+Text Label 7350 11500 0    50   ~ 0
+PD6_ADC6
+Wire Wire Line
+	8150 11500 7350 11500
+Text Label 7350 11650 0    50   ~ 0
+PD7_ADC7
+Wire Wire Line
+	8150 11650 7350 11650
+Text Label 2500 6175 0    50   ~ 0
++4...30
+Wire Wire Line
+	2350 6075 2500 6075
+Wire Wire Line
+	2350 5975 2500 5975
+Wire Wire Line
+	2350 5875 2500 5875
+Text Label 2500 5875 0    50   ~ 0
+GND
+Wire Wire Line
+	2350 6175 2500 6175
+Text Label 2500 6075 0    50   ~ 0
+USB_D-
+Text Label 2500 5975 0    50   ~ 0
+USB_D+
+Text Label 12175 12050 0    50   ~ 0
+USB_D-
+Text Label 12175 11900 0    50   ~ 0
+USB_D+
+Wire Wire Line
+	12175 11900 12050 11900
+Wire Wire Line
+	12175 12050 12050 12050
+Wire Wire Line
+	12850 10700 12050 10700
+Text Label 12850 10850 0    50   ~ 0
+PF1_U2-TX
+Text Label 12850 10700 0    50   ~ 0
+PF0_U2-RX
+Wire Wire Line
+	12850 10850 12050 10850
+Text Label 12850 11000 0    50   ~ 0
+PF2_U2-En
+Wire Wire Line
+	12850 11000 12050 11000
+Text Label 7350 12550 0    50   ~ 0
+PE6_C2-RX
+Wire Wire Line
+	8150 12550 7350 12550
+Text Label 7350 12700 0    50   ~ 0
+PE6_C2-TX
+Wire Wire Line
+	8150 12700 7350 12700
+Text Label 7350 10000 0    50   ~ 0
+PC0_SCL1
+Wire Wire Line
+	8150 10000 7350 10000
+Text Label 7350 10150 0    50   ~ 0
+PC1_SDA1
+Wire Wire Line
+	8150 10150 7350 10150
+Text Label 7350 11950 0    50   ~ 0
+PE0_T2C1_DAC
+Wire Wire Line
+	8150 11950 7350 11950
+Text Label 7350 12100 0    50   ~ 0
+PE1_T2nC1
+Wire Wire Line
+	8150 12100 7350 12100
+Text Label 7350 12250 0    50   ~ 0
+PE2_T2C3
+Wire Wire Line
+	8150 12250 7350 12250
+Text Label 7350 12400 0    50   ~ 0
+PE3_T2nC3
+Wire Wire Line
+	8150 12400 7350 12400
+Text Label 7350 9700 0    50   ~ 0
+PB10
+Wire Wire Line
+	8150 9700 7350 9700
+Text Label 7350 10300 0    50   ~ 0
+PC2
+Wire Wire Line
+	8150 10300 7350 10300
+Text Label 7350 8950 0    50   ~ 0
+PB5
+Wire Wire Line
+	8150 8950 7350 8950
+Text Label 7350 9100 0    50   ~ 0
+PB6
+Wire Wire Line
+	8150 9100 7350 9100
+Text Label 7350 9250 0    50   ~ 0
+PB7
+Wire Wire Line
+	8150 9250 7350 9250
+Text Label 7350 9400 0    50   ~ 0
+PB8
+Wire Wire Line
+	8150 9400 7350 9400
+Text Label 7350 9550 0    50   ~ 0
+PB9
+Wire Wire Line
+	8150 9550 7350 9550
+$Comp
+L elements:Вилка_PLS8 XP1
+U 1 1 5C32AFA9
+P 1850 5775
+F 0 "XP1" H 2106 5856 60  0000 C CNN
+F 1 "Вилка_PLS8" H 2100 4825 60  0001 C CNN
+F 2 "N_X:Вилка_PLS8_вертикальная" H 1850 5775 60  0001 C CNN
+F 3 "" H 1850 5775 60  0001 C CNN
+	1    1850 5775
+	1    0    0    -1  
+$EndComp
+Text Notes 1900 5625 0    50   ~ 0
+Выводится на\nбоковую колодку\nИспользуется штатно
+Text Notes 1850 7175 0    50   ~ 0
+Выводится на \nвертикальную гребенку\nШтатно не используется
+Text Notes 1850 8750 0    50   ~ 0
+Выводится на \nвертикальную гребенку\nШтатно не используется
+$Comp
+L elements:Вилка_PLS10 XP6
+U 1 1 5C3864AD
+P 17525 2825
+F 0 "XP6" H 17781 2906 60  0000 C CNN
+F 1 "Вилка_PLS10" H 17725 1625 60  0001 C CNN
+F 2 "N_X:Вилка_PLS10_вертикальная" H 17525 2825 60  0001 C CNN
+F 3 "" H 17525 2825 60  0001 C CNN
+	1    17525 2825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18150 2225 18025 2225
+Wire Wire Line
+	18150 3025 18025 3025
+Wire Wire Line
+	18150 3125 18025 3125
+Wire Wire Line
+	18150 3225 18025 3225
+Wire Wire Line
+	18150 3325 18025 3325
+Wire Wire Line
+	18150 3425 18025 3425
+Wire Wire Line
+	18150 3525 18025 3525
+Wire Wire Line
+	18150 3625 18025 3625
+Wire Wire Line
+	18150 3725 18025 3725
+Wire Wire Line
+	18150 3825 18025 3825
+Text Label 18150 3025 0    50   ~ 0
+PB6
+Text Label 18150 3125 0    50   ~ 0
+PB7
+Text Label 18150 3225 0    50   ~ 0
+PB8
+Text Label 18150 3325 0    50   ~ 0
+PB9
+Text Label 18150 2925 0    50   ~ 0
+PB5
+$Comp
+L elements:Вилка_PLS10 XP8
+U 1 1 5C3CDE17
+P 19750 2825
+F 0 "XP8" H 20006 2906 60  0000 C CNN
+F 1 "Вилка_PLS10" H 19950 1625 60  0001 C CNN
+F 2 "N_X:Вилка_PLS10_вертикальная" H 19750 2825 60  0001 C CNN
+F 3 "" H 19750 2825 60  0001 C CNN
+	1    19750 2825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20375 2925 20250 2925
+Wire Wire Line
+	20375 3025 20250 3025
+Wire Wire Line
+	20375 3125 20250 3125
+Wire Wire Line
+	20375 3225 20250 3225
+Wire Wire Line
+	20375 3325 20250 3325
+Wire Wire Line
+	20375 3425 20250 3425
+Wire Wire Line
+	20375 3525 20250 3525
+Wire Wire Line
+	20375 3625 20250 3625
+Wire Wire Line
+	20375 3725 20250 3725
+Wire Wire Line
+	20375 3825 20250 3825
+Text Label 20375 3325 0    50   ~ 0
+PC0_SCL1
+Text Label 20375 3225 0    50   ~ 0
+PC1_SDA1
+Text Label 20375 3125 0    50   ~ 0
+PC2
+Text Label 20375 2925 0    50   ~ 0
+PD5_ADC5
+Text Label 20375 3025 0    50   ~ 0
+PD6_ADC6
+Text Label 20375 3525 0    50   ~ 0
+PE0_T2C1_DAC
+Text Label 20375 3625 0    50   ~ 0
+PE1_T2nC1
+Text Label 20375 3725 0    50   ~ 0
+PE2_T2C3
+Text Label 20375 3825 0    50   ~ 0
+PE3_T2nC3
+Text Notes 17525 2650 0    50   ~ 0
+Выводятся на боковую колодку\nИспользуются штатно
+$Comp
+L elements:Вилка_PLS3 XP5
+U 1 1 5C3E5D8F
+P 17525 1925
+F 0 "XP5" H 17781 2006 60  0000 C CNN
+F 1 "Вилка_PLS3" H 17725 1350 60  0001 C CNN
+F 2 "N_X:Вилка_PLS3_вертикальная" H 17525 1925 60  0001 C CNN
+F 3 "" H 17525 1925 60  0001 C CNN
+	1    17525 1925
+	1    0    0    -1  
+$EndComp
+$Comp
+L elements:Вилка_PLS3 XP7
+U 1 1 5C3E60C0
+P 19725 1925
+F 0 "XP7" H 19981 2006 60  0000 C CNN
+F 1 "Вилка_PLS3" H 19925 1350 60  0001 C CNN
+F 2 "N_X:Вилка_PLS3_вертикальная" H 19725 1925 60  0001 C CNN
+F 3 "" H 19725 1925 60  0001 C CNN
+	1    19725 1925
+	1    0    0    -1  
+$EndComp
+NoConn ~ 20225 2025
+Wire Wire Line
+	18150 2925 18025 2925
+Wire Wire Line
+	18150 2125 18025 2125
+Wire Wire Line
+	20350 2225 20225 2225
+Wire Wire Line
+	20350 2125 20225 2125
+Text Label 18150 2125 0    50   ~ 0
+GND_MC
+Text Label 20350 2125 0    50   ~ 0
+GND_MC
+Text Label 18150 2225 0    50   ~ 0
+GND_LED1
+Text Label 20350 2225 0    50   ~ 0
+GND_LED2
+$Comp
+L elements:Резистор_0,125Вт R14
+U 1 1 5C442B11
+P 17675 4275
+F 0 "R14" H 17675 4150 60  0000 C CNN
+F 1 "39" H 17675 4425 60  0000 C CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 17675 4275 60  0001 C CNN
+F 3 "" H 17675 4275 60  0001 C CNN
+	1    17675 4275
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	17075 4275 17275 4275
+$Comp
+L elements:Светодиод HL2
+U 1 1 5C442B18
+P 18225 4275
+F 0 "HL2" H 18375 4450 60  0000 C CNN
+F 1 "Светодиод" H 18375 4125 60  0000 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_0603" H 18525 3775 60  0001 C CNN
+F 3 "" H 18525 3775 60  0001 C CNN
+	1    18225 4275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18075 4275 18225 4275
+Wire Wire Line
+	18525 4275 18725 4275
+Text Notes 19725 1725 0    50   ~ 0
+Выводится на \nвертикальную гребенку\nШтатно не используется
+Text Label 18725 4275 0    50   ~ 0
+GND_LED1
+$Comp
+L elements:Резистор_0,125Вт R16
+U 1 1 5C4848BA
+P 17675 5175
+F 0 "R16" H 17675 5050 60  0000 C CNN
+F 1 "39" H 17675 5325 60  0000 C CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 17675 5175 60  0001 C CNN
+F 3 "" H 17675 5175 60  0001 C CNN
+	1    17675 5175
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	17075 5175 17275 5175
+$Comp
+L elements:Светодиод HL4
+U 1 1 5C4848C1
+P 18225 5175
+F 0 "HL4" H 18375 5350 60  0000 C CNN
+F 1 "Светодиод" H 18375 5025 60  0000 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_0603" H 18525 4675 60  0001 C CNN
+F 3 "" H 18525 4675 60  0001 C CNN
+	1    18225 5175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18075 5175 18225 5175
+Wire Wire Line
+	18525 5175 18725 5175
+Text Label 18725 5175 0    50   ~ 0
+GND_LED1
+$Comp
+L elements:Резистор_0,125Вт R15
+U 1 1 5C4B0E2D
+P 17675 4725
+F 0 "R15" H 17675 4600 60  0000 C CNN
+F 1 "39" H 17675 4875 60  0000 C CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 17675 4725 60  0001 C CNN
+F 3 "" H 17675 4725 60  0001 C CNN
+	1    17675 4725
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	17075 4725 17275 4725
+$Comp
+L elements:Светодиод HL3
+U 1 1 5C4B0E34
+P 18225 4725
+F 0 "HL3" H 18375 4900 60  0000 C CNN
+F 1 "Светодиод" H 18375 4575 60  0000 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_0603" H 18525 4225 60  0001 C CNN
+F 3 "" H 18525 4225 60  0001 C CNN
+	1    18225 4725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18075 4725 18225 4725
+Wire Wire Line
+	18525 4725 18725 4725
+Text Label 18725 4725 0    50   ~ 0
+GND_LED1
+$Comp
+L elements:Резистор_0,125Вт R17
+U 1 1 5C4C7F72
+P 17675 5625
+F 0 "R17" H 17675 5500 60  0000 C CNN
+F 1 "39" H 17675 5775 60  0000 C CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 17675 5625 60  0001 C CNN
+F 3 "" H 17675 5625 60  0001 C CNN
+	1    17675 5625
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	17075 5625 17275 5625
+$Comp
+L elements:Светодиод HL5
+U 1 1 5C4C7F79
+P 18225 5625
+F 0 "HL5" H 18375 5800 60  0000 C CNN
+F 1 "Светодиод" H 18375 5475 60  0000 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_0603" H 18525 5125 60  0001 C CNN
+F 3 "" H 18525 5125 60  0001 C CNN
+	1    18225 5625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18075 5625 18225 5625
+Wire Wire Line
+	18525 5625 18725 5625
+Text Label 18725 5625 0    50   ~ 0
+GND_LED1
+$Comp
+L elements:Резистор_0,125Вт R18
+U 1 1 5C4D3C1B
+P 17675 6075
+F 0 "R18" H 17675 5950 60  0000 C CNN
+F 1 "39" H 17675 6225 60  0000 C CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 17675 6075 60  0001 C CNN
+F 3 "" H 17675 6075 60  0001 C CNN
+	1    17675 6075
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	17075 6075 17275 6075
+$Comp
+L elements:Светодиод HL6
+U 1 1 5C4D3C22
+P 18225 6075
+F 0 "HL6" H 18375 6250 60  0000 C CNN
+F 1 "Светодиод" H 18375 5925 60  0000 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_0603" H 18525 5575 60  0001 C CNN
+F 3 "" H 18525 5575 60  0001 C CNN
+	1    18225 6075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18075 6075 18225 6075
+Wire Wire Line
+	18525 6075 18725 6075
+Text Label 18725 6075 0    50   ~ 0
+GND_LED1
+$Comp
+L elements:Резистор_0,125Вт R19
+U 1 1 5C4E08CB
+P 17675 6475
+F 0 "R19" H 17675 6350 60  0000 C CNN
+F 1 "39" H 17675 6625 60  0000 C CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 17675 6475 60  0001 C CNN
+F 3 "" H 17675 6475 60  0001 C CNN
+	1    17675 6475
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	17075 6475 17275 6475
+$Comp
+L elements:Светодиод HL7
+U 1 1 5C4E08D2
+P 18225 6475
+F 0 "HL7" H 18375 6650 60  0000 C CNN
+F 1 "Светодиод" H 18375 6325 60  0000 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_0603" H 18525 5975 60  0001 C CNN
+F 3 "" H 18525 5975 60  0001 C CNN
+	1    18225 6475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18075 6475 18225 6475
+Wire Wire Line
+	18525 6475 18725 6475
+Text Label 18725 6475 0    50   ~ 0
+GND_LED1
+$Comp
+L elements:Резистор_0,125Вт R21
+U 1 1 5C4E08DB
+P 17675 7375
+F 0 "R21" H 17675 7250 60  0000 C CNN
+F 1 "39" H 17675 7525 60  0000 C CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 17675 7375 60  0001 C CNN
+F 3 "" H 17675 7375 60  0001 C CNN
+	1    17675 7375
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	17075 7375 17275 7375
+$Comp
+L elements:Светодиод HL9
+U 1 1 5C4E08E2
+P 18225 7375
+F 0 "HL9" H 18375 7550 60  0000 C CNN
+F 1 "Светодиод" H 18375 7225 60  0000 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_0603" H 18525 6875 60  0001 C CNN
+F 3 "" H 18525 6875 60  0001 C CNN
+	1    18225 7375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18075 7375 18225 7375
+Wire Wire Line
+	18525 7375 18725 7375
+Text Label 18725 7375 0    50   ~ 0
+GND_LED1
+$Comp
+L elements:Резистор_0,125Вт R20
+U 1 1 5C4E08EB
+P 17675 6925
+F 0 "R20" H 17675 6800 60  0000 C CNN
+F 1 "39" H 17675 7075 60  0000 C CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 17675 6925 60  0001 C CNN
+F 3 "" H 17675 6925 60  0001 C CNN
+	1    17675 6925
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	17075 6925 17275 6925
+$Comp
+L elements:Светодиод HL8
+U 1 1 5C4E08F2
+P 18225 6925
+F 0 "HL8" H 18375 7100 60  0000 C CNN
+F 1 "Светодиод" H 18375 6775 60  0000 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_0603" H 18525 6425 60  0001 C CNN
+F 3 "" H 18525 6425 60  0001 C CNN
+	1    18225 6925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18075 6925 18225 6925
+Wire Wire Line
+	18525 6925 18725 6925
+Text Label 18725 6925 0    50   ~ 0
+GND_LED1
+$Comp
+L elements:Резистор_0,125Вт R22
+U 1 1 5C4E08FB
+P 17675 7825
+F 0 "R22" H 17675 7700 60  0000 C CNN
+F 1 "39" H 17675 7975 60  0000 C CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 17675 7825 60  0001 C CNN
+F 3 "" H 17675 7825 60  0001 C CNN
+	1    17675 7825
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	17075 7825 17275 7825
+$Comp
+L elements:Светодиод HL10
+U 1 1 5C4E0902
+P 18225 7825
+F 0 "HL10" H 18375 8000 60  0000 C CNN
+F 1 "Светодиод" H 18375 7675 60  0000 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_0603" H 18525 7325 60  0001 C CNN
+F 3 "" H 18525 7325 60  0001 C CNN
+	1    18225 7825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18075 7825 18225 7825
+Wire Wire Line
+	18525 7825 18725 7825
+Text Label 18725 7825 0    50   ~ 0
+GND_LED1
+$Comp
+L elements:Резистор_0,125Вт R23
+U 1 1 5C4E090B
+P 17675 8275
+F 0 "R23" H 17675 8150 60  0000 C CNN
+F 1 "39" H 17675 8425 60  0000 C CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 17675 8275 60  0001 C CNN
+F 3 "" H 17675 8275 60  0001 C CNN
+	1    17675 8275
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	17075 8275 17275 8275
+$Comp
+L elements:Светодиод HL11
+U 1 1 5C4E0912
+P 18225 8275
+F 0 "HL11" H 18375 8450 60  0000 C CNN
+F 1 "Светодиод" H 18375 8125 60  0000 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_0603" H 18525 7775 60  0001 C CNN
+F 3 "" H 18525 7775 60  0001 C CNN
+	1    18225 8275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18075 8275 18225 8275
+Wire Wire Line
+	18525 8275 18725 8275
+Text Label 18725 8275 0    50   ~ 0
+GND_LED1
+Text Notes 17500 1750 0    50   ~ 0
+Выводится на \nвертикальную гребенку\nШтатно не используется
+$Comp
+L elements:Резистор_0,125Вт R24
+U 1 1 5C5A7949
+P 19900 4275
+F 0 "R24" H 19900 4150 60  0000 C CNN
+F 1 "39" H 19900 4425 60  0000 C CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 19900 4275 60  0001 C CNN
+F 3 "" H 19900 4275 60  0001 C CNN
+	1    19900 4275
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	19300 4275 19500 4275
+$Comp
+L elements:Светодиод HL12
+U 1 1 5C5A7950
+P 20450 4275
+F 0 "HL12" H 20600 4450 60  0000 C CNN
+F 1 "Светодиод" H 20600 4125 60  0000 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_0603" H 20750 3775 60  0001 C CNN
+F 3 "" H 20750 3775 60  0001 C CNN
+	1    20450 4275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20300 4275 20450 4275
+Wire Wire Line
+	20750 4275 20950 4275
+$Comp
+L elements:Резистор_0,125Вт R26
+U 1 1 5C5A7959
+P 19900 5175
+F 0 "R26" H 19900 5050 60  0000 C CNN
+F 1 "39" H 19900 5325 60  0000 C CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 19900 5175 60  0001 C CNN
+F 3 "" H 19900 5175 60  0001 C CNN
+	1    19900 5175
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	19300 5175 19500 5175
+$Comp
+L elements:Светодиод HL14
+U 1 1 5C5A7960
+P 20450 5175
+F 0 "HL14" H 20600 5350 60  0000 C CNN
+F 1 "Светодиод" H 20600 5025 60  0000 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_0603" H 20750 4675 60  0001 C CNN
+F 3 "" H 20750 4675 60  0001 C CNN
+	1    20450 5175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20300 5175 20450 5175
+Wire Wire Line
+	20750 5175 20950 5175
+$Comp
+L elements:Резистор_0,125Вт R25
+U 1 1 5C5A7969
+P 19900 4725
+F 0 "R25" H 19900 4600 60  0000 C CNN
+F 1 "39" H 19900 4875 60  0000 C CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 19900 4725 60  0001 C CNN
+F 3 "" H 19900 4725 60  0001 C CNN
+	1    19900 4725
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	19300 4725 19500 4725
+$Comp
+L elements:Светодиод HL13
+U 1 1 5C5A7970
+P 20450 4725
+F 0 "HL13" H 20600 4900 60  0000 C CNN
+F 1 "Светодиод" H 20600 4575 60  0000 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_0603" H 20750 4225 60  0001 C CNN
+F 3 "" H 20750 4225 60  0001 C CNN
+	1    20450 4725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20300 4725 20450 4725
+Wire Wire Line
+	20750 4725 20950 4725
+$Comp
+L elements:Резистор_0,125Вт R27
+U 1 1 5C5A7979
+P 19900 5625
+F 0 "R27" H 19900 5500 60  0000 C CNN
+F 1 "39" H 19900 5775 60  0000 C CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 19900 5625 60  0001 C CNN
+F 3 "" H 19900 5625 60  0001 C CNN
+	1    19900 5625
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	19300 5625 19500 5625
+$Comp
+L elements:Светодиод HL15
+U 1 1 5C5A7980
+P 20450 5625
+F 0 "HL15" H 20600 5800 60  0000 C CNN
+F 1 "Светодиод" H 20600 5475 60  0000 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_0603" H 20750 5125 60  0001 C CNN
+F 3 "" H 20750 5125 60  0001 C CNN
+	1    20450 5625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20300 5625 20450 5625
+Wire Wire Line
+	20750 5625 20950 5625
+$Comp
+L elements:Резистор_0,125Вт R28
+U 1 1 5C5A7989
+P 19900 6075
+F 0 "R28" H 19900 5950 60  0000 C CNN
+F 1 "39" H 19900 6225 60  0000 C CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 19900 6075 60  0001 C CNN
+F 3 "" H 19900 6075 60  0001 C CNN
+	1    19900 6075
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	19300 6075 19500 6075
+$Comp
+L elements:Светодиод HL16
+U 1 1 5C5A7990
+P 20450 6075
+F 0 "HL16" H 20600 6250 60  0000 C CNN
+F 1 "Светодиод" H 20600 5925 60  0000 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_0603" H 20750 5575 60  0001 C CNN
+F 3 "" H 20750 5575 60  0001 C CNN
+	1    20450 6075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20300 6075 20450 6075
+Wire Wire Line
+	20750 6075 20950 6075
+$Comp
+L elements:Резистор_0,125Вт R29
+U 1 1 5C5A799E
+P 19900 6475
+F 0 "R29" H 19900 6350 60  0000 C CNN
+F 1 "39" H 19900 6625 60  0000 C CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 19900 6475 60  0001 C CNN
+F 3 "" H 19900 6475 60  0001 C CNN
+	1    19900 6475
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	19300 6475 19500 6475
+$Comp
+L elements:Светодиод HL17
+U 1 1 5C5A79A5
+P 20450 6475
+F 0 "HL17" H 20600 6650 60  0000 C CNN
+F 1 "Светодиод" H 20600 6325 60  0000 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_0603" H 20750 5975 60  0001 C CNN
+F 3 "" H 20750 5975 60  0001 C CNN
+	1    20450 6475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20300 6475 20450 6475
+Wire Wire Line
+	20750 6475 20950 6475
+$Comp
+L elements:Резистор_0,125Вт R31
+U 1 1 5C5A79AE
+P 19900 7375
+F 0 "R31" H 19900 7250 60  0000 C CNN
+F 1 "39" H 19900 7525 60  0000 C CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 19900 7375 60  0001 C CNN
+F 3 "" H 19900 7375 60  0001 C CNN
+	1    19900 7375
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	19300 7375 19500 7375
+$Comp
+L elements:Светодиод HL19
+U 1 1 5C5A79B5
+P 20450 7375
+F 0 "HL19" H 20600 7550 60  0000 C CNN
+F 1 "Светодиод" H 20600 7225 60  0000 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_0603" H 20750 6875 60  0001 C CNN
+F 3 "" H 20750 6875 60  0001 C CNN
+	1    20450 7375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20300 7375 20450 7375
+Wire Wire Line
+	20750 7375 20950 7375
+$Comp
+L elements:Резистор_0,125Вт R30
+U 1 1 5C5A79BE
+P 19900 6925
+F 0 "R30" H 19900 6800 60  0000 C CNN
+F 1 "39" H 19900 7075 60  0000 C CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 19900 6925 60  0001 C CNN
+F 3 "" H 19900 6925 60  0001 C CNN
+	1    19900 6925
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	19300 6925 19500 6925
+$Comp
+L elements:Светодиод HL18
+U 1 1 5C5A79C5
+P 20450 6925
+F 0 "HL18" H 20600 7100 60  0000 C CNN
+F 1 "Светодиод" H 20600 6775 60  0000 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_0603" H 20750 6425 60  0001 C CNN
+F 3 "" H 20750 6425 60  0001 C CNN
+	1    20450 6925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20300 6925 20450 6925
+Wire Wire Line
+	20750 6925 20950 6925
+$Comp
+L elements:Резистор_0,125Вт R32
+U 1 1 5C5A79CE
+P 19900 7825
+F 0 "R32" H 19900 7700 60  0000 C CNN
+F 1 "39" H 19900 7975 60  0000 C CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 19900 7825 60  0001 C CNN
+F 3 "" H 19900 7825 60  0001 C CNN
+	1    19900 7825
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	19300 7825 19500 7825
+$Comp
+L elements:Светодиод HL20
+U 1 1 5C5A79D5
+P 20450 7825
+F 0 "HL20" H 20600 8000 60  0000 C CNN
+F 1 "Светодиод" H 20600 7675 60  0000 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_0603" H 20750 7325 60  0001 C CNN
+F 3 "" H 20750 7325 60  0001 C CNN
+	1    20450 7825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20300 7825 20450 7825
+Wire Wire Line
+	20750 7825 20950 7825
+$Comp
+L elements:Резистор_0,125Вт R33
+U 1 1 5C5A79DE
+P 19900 8275
+F 0 "R33" H 19900 8150 60  0000 C CNN
+F 1 "39" H 19900 8425 60  0000 C CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 19900 8275 60  0001 C CNN
+F 3 "" H 19900 8275 60  0001 C CNN
+	1    19900 8275
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	19300 8275 19500 8275
+$Comp
+L elements:Светодиод HL21
+U 1 1 5C5A79E5
+P 20450 8275
+F 0 "HL21" H 20600 8450 60  0000 C CNN
+F 1 "Светодиод" H 20600 8125 60  0000 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_0603" H 20750 7775 60  0001 C CNN
+F 3 "" H 20750 7775 60  0001 C CNN
+	1    20450 8275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20300 8275 20450 8275
+Wire Wire Line
+	20750 8275 20950 8275
+Text Label 20950 4275 0    50   ~ 0
+GND_LED2
+Text Label 20950 4725 0    50   ~ 0
+GND_LED2
+Text Label 20950 5175 0    50   ~ 0
+GND_LED2
+Text Label 20950 5625 0    50   ~ 0
+GND_LED2
+Text Label 20950 6075 0    50   ~ 0
+GND_LED2
+Text Label 20950 6475 0    50   ~ 0
+GND_LED2
+Text Label 20950 6925 0    50   ~ 0
+GND_LED2
+Text Label 20950 7375 0    50   ~ 0
+GND_LED2
+Text Label 20950 7825 0    50   ~ 0
+GND_LED2
+Text Label 20950 8275 0    50   ~ 0
+GND_LED2
+Text Label 19300 6000 0    50   ~ 0
+PC0_SCL1
+Text Label 19300 5550 0    50   ~ 0
+PC1_SDA1
+Text Label 19300 5100 0    50   ~ 0
+PC2
+Text Label 19300 4200 0    50   ~ 0
+PD5_ADC5
+Text Label 19300 4650 0    50   ~ 0
+PD6_ADC6
+Text Label 19300 6850 0    50   ~ 0
+PE0_T2C1_DAC
+Text Label 19300 7300 0    50   ~ 0
+PE1_T2nC1
+Text Label 19300 7750 0    50   ~ 0
+PE2_T2C3
+Text Label 19300 8200 0    50   ~ 0
+PE3_T2nC3
+Wire Wire Line
+	19300 4200 19300 4275
+Wire Wire Line
+	19300 4650 19300 4725
+Wire Wire Line
+	19300 5100 19300 5175
+Text Label 20375 3425 0    50   ~ 0
+PD7_ADC7
+Text Label 19300 6400 0    50   ~ 0
+PD7_ADC7
+Wire Wire Line
+	19300 5550 19300 5625
+Wire Wire Line
+	19300 6000 19300 6075
+Wire Wire Line
+	19300 6400 19300 6475
+Wire Wire Line
+	19300 6850 19300 6925
+Wire Wire Line
+	19300 8200 19300 8275
+Wire Wire Line
+	19300 7750 19300 7825
+Wire Wire Line
+	19300 7300 19300 7375
+Wire Wire Line
+	18225 13025 18075 13025
+Wire Wire Line
+	18075 13025 18075 13175
+Wire Wire Line
+	18075 13175 18225 13175
+$Comp
+L elements:Конденсатор_керамический C10
+U 1 1 5C6DD6CC
+P 19975 13475
+F 0 "C10" V 19950 13625 60  0000 C CNN
+F 1 "4,7мкФ(1210)" V 20100 13825 60  0000 C CNN
+F 2 "N_RLC:Конденсатор_SMD_1210" H 19975 13475 60  0001 C CNN
+F 3 "" H 19975 13475 60  0001 C CNN
+	1    19975 13475
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	19725 13375 19975 13375
+Wire Wire Line
+	19975 13375 19975 13425
+Wire Wire Line
+	19725 13525 19775 13525
+Wire Wire Line
+	19775 13525 19775 13775
+Wire Wire Line
+	19775 13775 19975 13775
+Wire Wire Line
+	19975 13775 19975 13575
+Text Label 20025 13775 0    50   ~ 0
+VCC
+Wire Wire Line
+	20025 13775 19975 13775
+Connection ~ 19975 13775
+Text Label 20025 13375 0    50   ~ 0
+GND
+Wire Wire Line
+	20025 13375 19975 13375
+Connection ~ 19975 13375
+Text Label 20025 13025 0    50   ~ 0
+RS_A
+Text Label 20025 13175 0    50   ~ 0
+RS_B
+Wire Wire Line
+	20025 13025 19725 13025
+Wire Wire Line
+	19725 13175 20025 13175
+$Comp
+L elements:Вилка_PLS6 XP4
+U 1 1 5C773351
+P 18900 10550
+F 0 "XP4" H 19156 10631 60  0000 C CNN
+F 1 "Вилка_PLS6" H 19200 9775 60  0001 C CNN
+F 2 "N_X:Вилка_PLS6_вертикальная" H 18900 10550 60  0001 C CNN
+F 3 "" H 18900 10550 60  0001 C CNN
+	1    18900 10550
+	1    0    0    -1  
+$EndComp
+$Comp
+L elements:Резистор_0,125Вт R8
+U 1 1 5C773AB7
+P 20300 10850
+F 0 "R8" H 20300 10725 60  0000 C CNN
+F 1 "100к" H 20300 11000 60  0000 C CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 20300 10850 60  0001 C CNN
+F 3 "" H 20300 10850 60  0001 C CNN
+	1    20300 10850
+	-1   0    0    1   
+$EndComp
+Text Label 20825 10850 0    50   ~ 0
+GND
+Wire Wire Line
+	20700 10850 20825 10850
+Wire Wire Line
+	19400 10850 19550 10850
+Wire Wire Line
+	19400 10950 19550 10950
+Wire Wire Line
+	19550 10950 19550 10850
+Connection ~ 19550 10850
+Wire Wire Line
+	19550 10850 19900 10850
+Text Label 19700 10650 0    50   ~ 0
+RS_A
+Text Label 19700 10750 0    50   ~ 0
+RS_B
+Wire Wire Line
+	19700 10650 19400 10650
+Wire Wire Line
+	19400 10750 19700 10750
+Text Label 19700 11050 0    50   ~ 0
+CAN_H
+Text Label 19700 11150 0    50   ~ 0
+CAN_L
+Wire Wire Line
+	19700 11050 19400 11050
+Wire Wire Line
+	19400 11150 19700 11150
+Wire Wire Line
+	20025 12825 19725 12825
+Text Label 20025 12825 0    50   ~ 0
+PF0_U2-RX
+Text Label 18000 13325 2    50   ~ 0
+PF1_U2-TX
+Wire Wire Line
+	18225 13325 18000 13325
+Wire Wire Line
+	18075 13025 18000 13025
+Connection ~ 18075 13025
+Text Label 18000 13025 2    50   ~ 0
+PF2_U2-En
+$Comp
+L elements:5559ИН10_28(UART-RS485) DD3
+U 1 1 5C862DC1
+P 18975 13175
+F 0 "DD3" H 18975 13812 60  0000 C CNN
+F 1 "5559ИН10_28(UART-RS485)" H 18975 13706 60  0000 C CNN
+F 2 "N_DD:SO-8" H 18975 13175 60  0001 C CNN
+F 3 "" H 18975 13175 60  0001 C CNN
+	1    18975 13175
+	1    0    0    -1  
+$EndComp
+$Comp
+L elements:5559ИН14А(CAN) DD2
+U 1 1 5C865170
+P 18975 12100
+F 0 "DD2" H 18975 12737 60  0000 C CNN
+F 1 "5559ИН14А(CAN)" H 18975 12631 60  0000 C CNN
+F 2 "N_DD:SO-8" H 18975 12100 60  0001 C CNN
+F 3 "" H 18975 12100 60  0001 C CNN
+	1    18975 12100
+	1    0    0    -1  
+$EndComp
+Text Label 18000 11750 2    50   ~ 0
+PE6_C2-RX
+Wire Wire Line
+	18225 12300 18000 12300
+Wire Wire Line
+	18225 11750 18000 11750
+Text Label 18000 12300 2    50   ~ 0
+PE6_C2-TX
+$Comp
+L elements:Конденсатор_керамический C8
+U 1 1 5C8B32FE
+P 16800 12050
+F 0 "C8" V 16775 12200 60  0000 C CNN
+F 1 "4,7мкФ(1210)" V 16925 12400 60  0000 C CNN
+F 2 "N_RLC:Конденсатор_SMD_1210" H 16800 12050 60  0001 C CNN
+F 3 "" H 16800 12050 60  0001 C CNN
+	1    16800 12050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18225 11950 16800 11950
+Wire Wire Line
+	16800 11950 16800 12000
+Wire Wire Line
+	16800 12150 16800 12250
+Wire Wire Line
+	16800 12250 17500 12250
+Wire Wire Line
+	17500 12250 17500 12100
+Wire Wire Line
+	17500 12100 18225 12100
+Wire Wire Line
+	16800 11950 16750 11950
+Connection ~ 16800 11950
+Wire Wire Line
+	16800 12250 16750 12250
+Connection ~ 16800 12250
+Text Label 16750 11950 2    50   ~ 0
+GND
+Text Label 16750 12250 2    50   ~ 0
+VCC
+$Comp
+L elements:Резистор_0,125Вт R9
+U 1 1 5C920223
+P 20300 11650
+F 0 "R9" H 20300 11525 60  0000 C CNN
+F 1 "24к" H 20300 11800 60  0000 C CNN
+F 2 "N_RLC:Резистор_SMD_0805_0,125Вт" H 20300 11650 60  0001 C CNN
+F 3 "" H 20300 11650 60  0001 C CNN
+	1    20300 11650
+	-1   0    0    1   
+$EndComp
+Text Label 20025 11950 0    50   ~ 0
+CAN_H
+Text Label 20025 12100 0    50   ~ 0
+CAN_L
+Wire Wire Line
+	20025 11950 19725 11950
+Wire Wire Line
+	19725 12100 20025 12100
+NoConn ~ 19725 12300
+Wire Wire Line
+	19725 11750 19850 11750
+Wire Wire Line
+	19850 11750 19850 11650
+Wire Wire Line
+	19850 11650 19900 11650
+Text Label 20900 11650 0    50   ~ 0
+GND
+Wire Wire Line
+	20700 11650 20900 11650
+Text Notes 18875 10425 0    50   ~ 0
+Выводится на\nбоковую колодку\nИспользуется штатно
+NoConn ~ 18025 2025
+Text Label 18150 3425 0    50   ~ 0
+PB10
+Text Label 7350 7900 0    50   ~ 0
+PA7
+Wire Wire Line
+	8150 7900 7350 7900
+Text Label 18150 3525 0    50   ~ 0
+PA7
+Text Label 18150 3625 0    50   ~ 0
+PA6
+Text Label 18150 3725 0    50   ~ 0
+PA5
+Text Label 18150 3825 0    50   ~ 0
+PA4
+Text Label 7350 7750 0    50   ~ 0
+PA6
+Text Label 7350 7600 0    50   ~ 0
+PA5
+Text Label 7350 7450 0    50   ~ 0
+PA4
+Wire Wire Line
+	8150 7750 7350 7750
+Wire Wire Line
+	8150 7600 7350 7600
+Wire Wire Line
+	8150 7450 7350 7450
+Text Label 17075 4275 0    50   ~ 0
+PB5
+Text Label 17075 4725 0    50   ~ 0
+PB6
+Text Label 17075 5175 0    50   ~ 0
+PB7
+Text Label 17075 5625 0    50   ~ 0
+PB8
+Text Label 17075 6075 0    50   ~ 0
+PB9
+Text Label 17075 6475 0    50   ~ 0
+PB10
+Text Label 17075 6925 0    50   ~ 0
+PA7
+Text Label 17075 7375 0    50   ~ 0
+PA6
+Text Label 17075 7825 0    50   ~ 0
+PA5
+Text Label 17075 8275 0    50   ~ 0
+PA4
+Text Label 2500 7825 0    50   ~ 0
+TMS_DIO_RX
+Text Label 2500 7725 0    50   ~ 0
+TCK_CLK_TX
+Text Label 2500 7925 0    50   ~ 0
+TDO_SWO
+$Comp
+L elements:Вилка_PLS8 XP2
+U 1 1 5C43CAFC
+P 1850 7325
+F 0 "XP2" H 2106 7406 60  0000 C CNN
+F 1 "Вилка_PLS8" H 2100 6375 60  0001 C CNN
+F 2 "N_X:Вилка_PLS8_вертикальная" H 1850 7325 60  0001 C CNN
+F 3 "" H 1850 7325 60  0001 C CNN
+	1    1850 7325
+	1    0    0    -1  
+$EndComp
+Text Label 2500 8025 0    50   ~ 0
+RES
+Wire Wire Line
+	2500 8025 2350 8025
+Wire Wire Line
+	13350 12650 13800 12650
+Wire Wire Line
+	12050 11300 13000 11300
+Wire Wire Line
+	13000 11300 13000 11600
+Connection ~ 13000 11600
+Connection ~ 6150 10600
+Wire Wire Line
+	6150 10600 8150 10600
+Connection ~ 6500 10750
+Wire Wire Line
+	6500 10750 8150 10750
+Connection ~ 6875 11200
+Wire Wire Line
+	6875 11200 8150 11200
+Wire Wire Line
+	5150 10600 6150 10600
+Wire Wire Line
+	5150 10750 6500 10750
+Wire Wire Line
+	5150 11200 6875 11200
+Text Label 2500 8125 0    50   ~ 0
+GND
+Wire Wire Line
+	2350 8125 2500 8125
+$EndSCHEMATC
