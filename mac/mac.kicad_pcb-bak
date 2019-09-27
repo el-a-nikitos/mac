@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 4)
+    (drawings 0)
     (tracks 0)
     (zones 0)
     (modules 32)
@@ -48,11 +48,11 @@
     (uvias_allowed no)
     (uvia_min_size 0.2)
     (uvia_min_drill 0.1)
-    (edge_width 0.25)
+    (edge_width 0.05)
     (segment_width 0.2)
     (pcb_text_width 0.3)
     (pcb_text_size 1.5 1.5)
-    (mod_edge_width 0.25)
+    (mod_edge_width 0.12)
     (mod_text_size 1 1)
     (mod_text_width 0.15)
     (pad_size 1.524 1.524)
@@ -222,7 +222,7 @@
   )
 
   (module "N_RLC:Резонатор_РК456МДУ(DIP)" (layer F.Cu) (tedit 5D8A7657) (tstamp 5D8DFF2F)
-    (at 150.5 77.85)
+    (at 202.75 142.35)
     (path /5D91CE54)
     (fp_text reference ZQ1 (at 5.25 -3.25 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.2)))
@@ -250,7 +250,7 @@
   )
 
   (module N_X:Вилка_PLD6_вертикальная (layer F.Cu) (tedit 5C293295) (tstamp 5D8DFF21)
-    (at 167.655 64.285)
+    (at 219.905 128.785)
     (path /5D9BA76C)
     (fp_text reference XP1 (at 4.7 -4.6) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.2)))
@@ -311,7 +311,7 @@
   )
 
   (module N_VD_HL:Диод_S13_SOD-123 (layer F.Cu) (tedit 5D8D1629) (tstamp 5D8DFF0F)
-    (at 157.624999 85.94)
+    (at 209.874999 150.44)
     (descr "SOT-23, Single Diode")
     (tags SOT-23)
     (path /5D90375C/5D906C24)
@@ -350,7 +350,7 @@
   )
 
   (module N_VD_HL:Транзистор_IRLML6344TR_SOT-23 (layer F.Cu) (tedit 5C97DFC7) (tstamp 5D8DFEFB)
-    (at 167.83 68.61)
+    (at 220.08 133.11)
     (descr "SOT-23, Single Diode")
     (tags SOT-23)
     (path /5DA00AA7)
@@ -402,7 +402,7 @@
   )
 
   (module N_VD_HL:Транзистор_IRLML6344TR_SOT-23 (layer F.Cu) (tedit 5C97DFC7) (tstamp 5D8DFEDB)
-    (at 177.03 62.01)
+    (at 229.28 126.51)
     (descr "SOT-23, Single Diode")
     (tags SOT-23)
     (path /5D92DBC8)
@@ -454,7 +454,7 @@
   )
 
   (module N_VD_HL:Диод_S13_SOD-123 (layer F.Cu) (tedit 5D8D1629) (tstamp 5D8DFEBB)
-    (at 161.774999 76.6)
+    (at 214.024999 141.1)
     (descr "SOT-23, Single Diode")
     (tags SOT-23)
     (path /5D9BD6FE)
@@ -493,7 +493,7 @@
   )
 
   (module N_RLC:Резистор_SMD_0603_0,065_Вт (layer F.Cu) (tedit 5D8A71D3) (tstamp 5D8DFEA7)
-    (at 180.38 64.31)
+    (at 232.63 128.81)
     (path /5D9E6AB9)
     (fp_text reference R8 (at 0.65 -1.9) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.2)))
@@ -519,7 +519,7 @@
   )
 
   (module N_RLC:Резистор_SMD_0603_0,065_Вт (layer F.Cu) (tedit 5D8A71D3) (tstamp 5D8DFE9B)
-    (at 169.6 75.46)
+    (at 221.85 139.96)
     (path /5DA2D7B2)
     (fp_text reference R7 (at 0.65 -1.9) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.2)))
@@ -545,7 +545,7 @@
   )
 
   (module N_RLC:Резистор_SMD_0603_0,065_Вт (layer F.Cu) (tedit 5D8A71D3) (tstamp 5D8DFE8F)
-    (at 168.35 79.55)
+    (at 220.6 144.05)
     (path /5DA1AF6D)
     (fp_text reference R6 (at 0.65 -1.9) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.2)))
@@ -571,7 +571,7 @@
   )
 
   (module N_RLC:Резистор_SMD_0603_0,065_Вт (layer F.Cu) (tedit 5D8A71D3) (tstamp 5D8DFE83)
-    (at 172.4 78.51)
+    (at 224.65 143.01)
     (path /5D933090)
     (fp_text reference R5 (at 0.65 -1.9) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.2)))
@@ -597,7 +597,7 @@
   )
 
   (module N_RLC:Резистор_SMD_0603_0,065_Вт (layer F.Cu) (tedit 5D8A71D3) (tstamp 5D8DFE77)
-    (at 179.28 70.41)
+    (at 231.53 134.91)
     (path /5D9312A2)
     (fp_text reference R4 (at 0.65 -1.9) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.2)))
@@ -623,7 +623,7 @@
   )
 
   (module N_RLC:Резистор_SMD_0603_0,065_Вт (layer F.Cu) (tedit 5D8A71D3) (tstamp 5D8DFE6B)
-    (at 173.65 74.96)
+    (at 225.9 139.46)
     (path /5D8E331D)
     (fp_text reference R3 (at 0.65 -1.9) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.2)))
@@ -649,7 +649,7 @@
   )
 
   (module N_RLC:Резистор_SMD_0603_0,065_Вт (layer F.Cu) (tedit 5D8A71D3) (tstamp 5D8DFE5F)
-    (at 175.23 71.91)
+    (at 227.48 136.41)
     (path /5D93AC60)
     (fp_text reference R2 (at 0.65 -1.9) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.2)))
@@ -675,7 +675,7 @@
   )
 
   (module N_RLC:Резистор_SMD_0603_0,065_Вт (layer F.Cu) (tedit 5D8A71D3) (tstamp 5D8DFE53)
-    (at 179.98 67.36)
+    (at 232.23 131.86)
     (path /5D93C945)
     (fp_text reference R1 (at 0.65 -1.9) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.2)))
@@ -701,7 +701,7 @@
   )
 
   (module N_RLC:Чип-индуктивность_SMD_0805 (layer F.Cu) (tedit 5C5F0EA3) (tstamp 5D8DFE47)
-    (at 156.5 89.29)
+    (at 208.75 153.79)
     (path /5D90375C/5D90A253)
     (fp_text reference L1 (at 1.25 -2) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.2)))
@@ -733,7 +733,7 @@
   )
 
   (module N_VD_HL:Транзистор_IRLML6344TR_SOT-23 (layer F.Cu) (tedit 5C97DFC7) (tstamp 5D8DFE35)
-    (at 162.5 86.59)
+    (at 214.75 151.09)
     (descr "SOT-23, Single Diode")
     (tags SOT-23)
     (path /5D90375C/5D906BFA)
@@ -785,7 +785,7 @@
   )
 
   (module N_RLC:Предохранитель_SMD_1812 (layer F.Cu) (tedit 5C315924) (tstamp 5D8DFE15)
-    (at 148.675 87.365)
+    (at 200.925 151.865)
     (path /5D90375C/5D906C1D)
     (fp_text reference FU2 (at 2.25 -3 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.2)))
@@ -820,7 +820,7 @@
   )
 
   (module N_RLC:Предохранитель_SMD_1812 (layer F.Cu) (tedit 5C315924) (tstamp 5D8DFE00)
-    (at 148.675 93.465)
+    (at 200.925 157.965)
     (path /5D90375C/5D906C32)
     (fp_text reference FU1 (at 2.25 -3 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.2)))
@@ -855,7 +855,7 @@
   )
 
   (module N_DD:Микросхема_1986ВЕ92QL (layer F.Cu) (tedit 5C3159DC) (tstamp 5D8DFDEB)
-    (at 147.624999 60.484999)
+    (at 199.874999 124.984999)
     (path /5D8E8A15)
     (fp_text reference DD1 (at 26.65 4.75) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -1011,7 +1011,7 @@
   )
 
   (module N_RLC:Конденсатор_SMD_0603 (layer F.Cu) (tedit 5D8A7284) (tstamp 5D8DFD9B)
-    (at 156.1 92.54)
+    (at 208.35 157.04)
     (path /5D90375C/5D912FE2)
     (fp_text reference C13 (at 0.9 -1.9) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.2)))
@@ -1037,7 +1037,7 @@
   )
 
   (module N_RLC:Конденсатор_SMD_0603 (layer F.Cu) (tedit 5D8A7284) (tstamp 5D8DFD8F)
-    (at 161.15 90.39)
+    (at 213.4 154.89)
     (path /5D90375C/5D912DEC)
     (fp_text reference C12 (at 0.9 -1.9) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.2)))
@@ -1063,7 +1063,7 @@
   )
 
   (module N_RLC:Конденсатор_SMD_0603 (layer F.Cu) (tedit 5D8A7284) (tstamp 5D8DFD83)
-    (at 156.1 95.59)
+    (at 208.35 160.09)
     (path /5D90375C/5D906C0C)
     (fp_text reference C11 (at 0.9 -1.9) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.2)))
@@ -1089,7 +1089,7 @@
   )
 
   (module N_RLC:Конденсатор_SMD_0603 (layer F.Cu) (tedit 5D8A7284) (tstamp 5D8DFD77)
-    (at 165.85 85.84)
+    (at 218.1 150.34)
     (path /5D90375C/5D906C02)
     (fp_text reference C10 (at 0.9 -1.9) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.2)))
@@ -1115,7 +1115,7 @@
   )
 
   (module N_RLC:Конденсатор_SMD_0603 (layer F.Cu) (tedit 5D8A7284) (tstamp 5D8DFD6B)
-    (at 175.23 68.86)
+    (at 227.48 133.36)
     (path /5D9148D7)
     (fp_text reference C9 (at 0.9 -1.9) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.2)))
@@ -1141,7 +1141,7 @@
   )
 
   (module N_RLC:Конденсатор_SMD_0603 (layer F.Cu) (tedit 5D8A7284) (tstamp 5D8DFD5F)
-    (at 164.3 79.75)
+    (at 216.55 144.25)
     (path /5D9148CB)
     (fp_text reference C8 (at 0.9 -1.9) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.2)))
@@ -1167,7 +1167,7 @@
   )
 
   (module N_RLC:Конденсатор_SMD_0603 (layer F.Cu) (tedit 5D8A7284) (tstamp 5D8DFD53)
-    (at 171.18 70.91)
+    (at 223.43 135.41)
     (path /5D9145EE)
     (fp_text reference C7 (at 0.9 -1.9) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.2)))
@@ -1193,7 +1193,7 @@
   )
 
   (module N_RLC:Конденсатор_SMD_0603 (layer F.Cu) (tedit 5D8A7284) (tstamp 5D8DFD47)
-    (at 175.93 65.81)
+    (at 228.18 130.31)
     (path /5D9142AD)
     (fp_text reference C6 (at 0.9 -1.9) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.2)))
@@ -1219,7 +1219,7 @@
   )
 
   (module N_RLC:Конденсатор_SMD_0603 (layer F.Cu) (tedit 5D8A7284) (tstamp 5D8DFD3B)
-    (at 180.38 61.26)
+    (at 232.63 125.76)
     (path /5D921736)
     (fp_text reference C5 (at 0.9 -1.9) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.2)))
@@ -1245,7 +1245,7 @@
   )
 
   (module N_RLC:Конденсатор_SMD_0603 (layer F.Cu) (tedit 5D8A7284) (tstamp 5D8DFD2F)
-    (at 165.55 76.5)
+    (at 217.8 141)
     (path /5D920655)
     (fp_text reference C4 (at 0.9 -1.9) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.2)))
@@ -1271,7 +1271,7 @@
   )
 
   (module N_RLC:Конденсатор_SMD_0603 (layer F.Cu) (tedit 5D8A7284) (tstamp 5D8DFD23)
-    (at 166.73 72.41)
+    (at 218.98 136.91)
     (path /5D911458)
     (fp_text reference C3 (at 0.9 -1.9) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.2)))
@@ -1297,7 +1297,7 @@
   )
 
   (module N_RLC:Конденсатор_SMD_0603 (layer F.Cu) (tedit 5D8A7284) (tstamp 5D8DFD17)
-    (at 171.18 67.86)
+    (at 223.43 132.36)
     (path /5D9105AD)
     (fp_text reference C2 (at 0.9 -1.9) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.2)))
@@ -1323,7 +1323,7 @@
   )
 
   (module N_RLC:Конденсатор_SMD_0603 (layer F.Cu) (tedit 5D8A7284) (tstamp 5D8DFD0B)
-    (at 160.25 79.75)
+    (at 212.5 144.25)
     (path /5D8FABF7)
     (fp_text reference C1 (at 0.9 -1.9) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.2)))
@@ -1347,10 +1347,5 @@
       (rotate (xyz 0 90 90))
     )
   )
-
-  (gr_line (start 100 90) (end 100 50) (layer Edge.Cuts) (width 0.25) (tstamp 5D8E0160))
-  (gr_line (start 140 90) (end 100 90) (layer Edge.Cuts) (width 0.25))
-  (gr_line (start 140 50) (end 140 90) (layer Edge.Cuts) (width 0.25))
-  (gr_line (start 100 50) (end 140 50) (layer Edge.Cuts) (width 0.25))
 
 )
